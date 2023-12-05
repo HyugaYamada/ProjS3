@@ -1,0 +1,398 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="~/images/favicon/icon.png">
+	<link href="https://fonts.googleapis.com/css2?family=Elsie&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Elsie&family=Lexend:wght@400;500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="~/css/all.min.css">
+	<link rel="stylesheet" href="~/css/slick.css">
+	<link rel="stylesheet" href="~/css/aos.css">
+	<link rel="stylesheet" href="~/css/animate.css">
+	<link rel="stylesheet" href="~/css/bootstrap.min.css">
+	<link rel="stylesheet" href="~/css/photoswipe.min.css">
+	<link rel="stylesheet" href="~/css/default-skin.min.css">
+	<link rel="stylesheet" href="~/css/style.css">
+	<link rel="stylesheet" href="~/css/media-query.css">
+</head>
+<body>
+	<div class="site_content">
+        @await Html.PartialAsync("_Header")
+
+        @RenderBody()
+		<!-- Gallery Section Start -->
+		<section id="homepage1-gallery-sec">
+			<div class="container line index-gallery-top">
+				<span class="line-3"></span>
+				<span class="line-4"></span>
+				<span class="line-5"> </span>
+				<div class="gallery-top-sec">
+					<p class="gallery-txt1"><span class="pr-10"><img src="~/images/Homepage1/yellow-star.png" alt="yellow-star"></span>OUR GALLERY<span class="pf-10"><img src="~/images/Homepage1/yellow-star.png" alt="yellow-star"></span></p>
+					<h2 class="gallery-txt">Bermiz Hot Dishes</h2>
+				</div>
+			</div>
+
+			<div class="gallery-food-slider" id="gallery">
+				<div class="swiper-wrapper gallery-item-sec">
+					<div class="swiper-slide gallery-slide">
+						<div class="gallery-item">
+							<a class="gallery-popup" href="~/images/Homepage1/gallery-1.png" data-caption="Kebab" data-width="600" data-height="800">
+								<img src="~/images/Homepage1/gallery-1.png" class="img-fluid" alt="gallery item">
+								<div class="content-overlay-home2"></div>
+							</a>
+						</div>
+						<div class="home2-gallery-overlay fadeIn-bottom fadeIn-right">
+							<a class="gallery-popup" href="~/images/Homepage1/gallery-1.png" data-caption="Kebab" data-width="600" data-height="800">
+								<p class="gallery-overlay-txt1">Kebab</p>
+								<div class="home2-search-icon">
+									<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<mask style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="40" height="40">
+											<rect width="40" height="40" fill="white"></rect>
+										</mask>
+										<g mask="url(#mask0_540_5055)">
+											<circle cx="19.6111" cy="19.6108" r="14.9809" stroke="#0B1315" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M30.0305 30.8086L35.9039 36.6667" stroke="#0B1315" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</g>
+									</svg>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="swiper-slide gallery-slide">
+						<div class="gallery-item">
+							<a class="gallery-popup" href="~/images/Homepage1/gallery-2.png" data-caption="Finger Roll" data-width="600" data-height="800">
+								<img src="~/images/Homepage1/gallery-2.png" class="img-fluid" alt="gallery item">
+								<div class="content-overlay-home2"></div>
+							</a>
+						</div>
+						<div class="home2-gallery-overlay fadeIn-bottom fadeIn-right">
+							<a class="gallery-popup" href="~/images/Homepage1/gallery-2.png" data-caption="Finger Roll" data-width="600" data-height="800">
+								<p class="gallery-overlay-txt1">Finger Roll</p>
+								<div class="home2-search-icon">
+									<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<mask style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="40" height="40">
+											<rect width="40" height="40" fill="white"></rect>
+										</mask>
+										<g mask="url(#mask0_540_5055)">
+											<circle cx="19.6111" cy="19.6108" r="14.9809" stroke="#0B1315" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M30.0305 30.8086L35.9039 36.6667" stroke="#0B1315" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</g>
+									</svg>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="swiper-slide gallery-slide">
+						<div class="gallery-item">
+							<a class="gallery-popup" href="~/images/Homepage1/gallery-3.png" data-caption="Chicken" data-width="600" data-height="800">
+								<img src="~/images/Homepage1/gallery-3.png" class="img-fluid" alt="gallery item">
+								<div class="content-overlay-home2"></div>
+							</a>
+						</div>
+						<div class="home2-gallery-overlay fadeIn-bottom fadeIn-right">
+							<a class="gallery-popup" href="~/images/Homepage1/gallery-3.png" data-caption="Chicken" data-width="600" data-height="800">
+								<p class="gallery-overlay-txt1">Chicken</p>
+								<div class="home2-search-icon">
+									<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<mask style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="40" height="40">
+											<rect width="40" height="40" fill="white"></rect>
+										</mask>
+										<g mask="url(#mask0_540_5055)">
+											<circle cx="19.6111" cy="19.6108" r="14.9809" stroke="#0B1315" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M30.0305 30.8086L35.9039 36.6667" stroke="#0B1315" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</g>
+									</svg>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="swiper-slide gallery-slide">
+						<div class="gallery-item">
+							<a class="gallery-popup" href="~/images/Homepage1/gallery-4.png" data-caption="Pasta" data-width="600" data-height="800">
+								<img src="~/images/Homepage1/gallery-4.png" class="img-fluid" alt="gallery item">
+								<div class="content-overlay-home2"></div>
+							</a>
+						</div>
+						<div class="home2-gallery-overlay fadeIn-bottom fadeIn-right">
+							<a class="gallery-popup" href="~/images/Homepage1/gallery-4.png" data-caption="Pasta" data-width="600" data-height="800">
+								<p class="gallery-overlay-txt1">Pasta</p>
+								<div class="home2-search-icon">
+									<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<mask style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="40" height="40">
+											<rect width="40" height="40" fill="white"></rect>
+										</mask>
+										<g mask="url(#mask0_540_5055)">
+											<circle cx="19.6111" cy="19.6108" r="14.9809" stroke="#0B1315" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M30.0305 30.8086L35.9039 36.6667" stroke="#0B1315" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</g>
+									</svg>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="swiper-slide gallery-slide">
+						<div class="gallery-item">
+							<a class="gallery-popup" href="~/images/Homepage1/gallery-5.png" data-caption="Roll" data-width="600" data-height="800">
+								<img src="~/images/Homepage1/gallery-5.png" class="img-fluid" alt="gallery item">
+								<div class="content-overlay-home2"></div>
+							</a>
+						</div>
+						<div class="home2-gallery-overlay fadeIn-bottom fadeIn-right">
+							<a class="gallery-popup" href="~/images/Homepage1/gallery-5.png" data-caption="Roll" data-width="600" data-height="800">
+								<p class="gallery-overlay-txt1">Roll</p>
+								<div class="home2-search-icon">
+									<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<mask style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="40" height="40">
+											<rect width="40" height="40" fill="white"></rect>
+										</mask>
+										<g mask="url(#mask0_540_5055)">
+											<circle cx="19.6111" cy="19.6108" r="14.9809" stroke="#0B1315" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M30.0305 30.8086L35.9039 36.6667" stroke="#0B1315" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</g>
+									</svg>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="swiper-slide gallery-slide">
+						<div class="gallery-item">
+							<a class="gallery-popup" href="~/images/Homepage1/gallery-1.png" data-caption="Kebab" data-width="600" data-height="800">
+								<img src="~/images/Homepage1/gallery-1.png" class="img-fluid" alt="gallery item">
+								<div class="content-overlay-home2"></div>
+							</a>
+						</div>
+						<div class="home2-gallery-overlay fadeIn-bottom fadeIn-right">
+							<a class="gallery-popup" href="~/images/Homepage1/gallery-1.png" data-caption="Kebab" data-width="600" data-height="800">
+								<p class="gallery-overlay-txt1">Kebab</p>
+								<div class="home2-search-icon">
+									<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<mask style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="40" height="40">
+											<rect width="40" height="40" fill="white"></rect>
+										</mask>
+										<g mask="url(#mask0_540_5055)">
+											<circle cx="19.6111" cy="19.6108" r="14.9809" stroke="#0B1315" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M30.0305 30.8086L35.9039 36.6667" stroke="#0B1315" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</g>
+									</svg>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+				<div class="pswp__bg"></div>
+				<div class="pswp__scroll-wrap">
+					<div class="pswp__container">
+						<div class="pswp__item"></div>
+						<div class="pswp__item"></div>
+						<div class="pswp__item"></div>
+					</div>
+					<div class="pswp__ui pswp__ui--hidden">
+						<div class="pswp__top-bar">
+							<!--  Controls are self-explanatory. Order can be changed. -->
+							<div class="pswp__counter"></div>
+							<button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+							<button class="pswp__button pswp__button--share" title="Share"></button>
+							<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+							<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+							<div class="pswp__preloader">
+								<div class="pswp__preloader__icn">
+									<div class="pswp__preloader__cut">
+										<div class="pswp__preloader__donut"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+							<div class="pswp__share-tooltip"></div>
+						</div>
+						<button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+						</button>
+						<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+						</button>
+						<div class="pswp__caption">
+							<div class="pswp__caption__center"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Gallery Section End -->
+		<!-- Testimonial Section Start -->
+		<section id="homepage1-testimonial-sec" class="reveal">
+			<div class="container line ptb-100">
+				<span class="line-3"></span>
+				<span class="line-4"></span>
+				<span class="line-5"> </span>
+				<div class="tesimonila-deatils">
+					<div class="tesimonila-left pbmit-animation-style1 reveal">
+						<img src="~/images/Homepage1/testimonial-1.png" alt="client-img" class="img-fluid">
+					</div>
+					<div class="tesimonila-right">
+						<div class="tesimonila-right-top">
+							<p class="tesimonial-txt1 wow fadeInUp" data-wow-duration="1s"><span class="pr-10"><img src="~/images/Homepage1/yellow-star.png" alt="yellow-star"></span>TESTIMONIALS<span class="pf-10"><img src="~/images/Homepage1/yellow-star.png" alt="yellow-star"></span></p>
+							<h2 class="tesimonial-txt2 wow fadeInUp " data-wow-duration="1.4s">What Clients Said</h2>
+						</div>
+						<div class="tesimonial-slider-section wow fadeInUp " data-wow-duration="1.6s">
+							<div class="tesimonila-slide">
+								<h3 class="d-none">Client Name</h3>
+								<p class="tesimonial-txt3">
+									“ This bermiz restaurant has left the best
+									impressions! Hospitable hosts, delicious
+									dishes, beautiful presentation, wide wine
+									list and wonderful dessert. I recommend
+									to everyone! I would like to come back
+									here again and again.”
+								</p>
+								<h4 class="tesimonial-txt4">PAUL SERGEO</h4>
+							</div>
+							<div class="tesimonila-slide">
+								<p class="tesimonial-txt3">
+									“ This bermiz restaurant has left the best
+									impressions! Hospitable hosts, delicious
+									dishes, beautiful presentation, wide wine
+									list and wonderful dessert. I recommend
+									to everyone! I would like to come back
+									here again and again.”
+								</p>
+								<h4 class="tesimonial-txt4">PAUL SERGEO</h4>
+							</div>
+							<div class="tesimonila-slide">
+								<p class="tesimonial-txt3">
+									“ This bermiz restaurant has left the best
+									impressions! Hospitable hosts, delicious
+									dishes, beautiful presentation, wide wine
+									list and wonderful dessert. I recommend
+									to everyone! I would like to come back
+									here again and again.”
+								</p>
+								<h4 class="tesimonial-txt4">PAUL SERGEO</h4>
+							</div>
+							<div class="tesimonila-slide">
+								<p class="tesimonial-txt3">
+									“ This bermiz restaurant has left the best
+									impressions! Hospitable hosts, delicious
+									dishes, beautiful presentation, wide wine
+									list and wonderful dessert. I recommend
+									to everyone! I would like to come back
+									here again and again.”
+								</p>
+								<h4 class="tesimonial-txt4">PAUL SERGEO</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Testimonial Section End -->
+		<!-- Visit Section Start -->
+		<section id="visit-restaurant-sec" class="reveal">
+			<div class="container line visit-restaurant-sec1">
+				<span class="line-3"></span>
+				<span class="line-4"></span>
+				<span class="line-5"> </span>
+				<div class="visit-restaurant-full">
+					<div class="visit-restaurant-left" data-aos="fade-right">
+						<div class="gallery-top-sec">
+							<p class="visit-txt1"><span class="pr-10"><img src="~/images/Homepage1/yellow-star.png" alt="yellow-star"></span>RIGHT HERE WAITING<span class="pf-10"><img src="~/images/Homepage1/yellow-star.png" alt="yellow-star"></span></p>
+							<h2 class="visit-txt2">Visit Our Restaurant</h2>
+							<p class="visit-txt3">We see our customers as invited guests to a party, and we are the hosts. Piazza della Signoria - 1050122, USA.</p>
+							<div class="homepage-calling">
+								<p class="visit-no-txt">M:<a href="mailto:booking@bermiz.com" class="Visit-no">booking@bermiz.com</a></p>
+								<p class="visit-no-txt">T:<a href="tel:1300748133" class="Visit-no">+1(234)567 8899</a></p>
+							</div>
+							<div class="direction-btn">
+								<a href="contact-us.html">Get Directions</a>
+							</div>
+						</div>
+					</div>
+					<div class="visit-restaurant-right" data-aos="fade-left">
+						<div class="visit-restaurant-right-full">
+							<div class="visit-restaurant-right-img1 pbmit-animation-style1 reveal">
+								<img src="~/images/Homepage1/visit-1.png" alt="food-img">
+							</div>
+							<div class="visit-restaurant-right-img2 pbmit-animation-style1 reveal">
+								<img src="~/images/Homepage1/visit-2.png" alt="food-img">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Visit Section End -->
+		@await Html.PartialAsync("_Footer")
+		<!-- Fixed Search Bar Start -->
+		<div>
+			<div class="fixed-serach-icon ">
+				<div class="fixed-search ">
+					<a href="javascript:void(0)">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<mask id="mask0_504_17203" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+								<rect width="24" height="24" fill="white" />
+							</mask>
+							<g mask="url(#mask0_504_17203)">
+								<circle cx="11.7666" cy="11.7666" r="8.98856" stroke="#0B1315" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+								<path d="M18.0183 18.4851L21.5423 22" stroke="#0B1315" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+							</g>
+						</svg>
+					</a>
+				</div>
+			</div>
+			<div class="search-popup">
+				<span class="search-back-drop"></span>
+				<button class="close-search"><span class="fa fa-times"></span></button>
+				<div class="search-inner">
+					<form method="post" action="index.html">
+						<div class="form-group">
+							<input type="search" name="search-field" value="" placeholder="Search..." required="">
+							<button type="submit"><i class="fa fa-search"></i></button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- Fixed Search Bar End -->
+		<!-- Hero Video Modal Start -->
+		<div class="modal fade homepage-video-modal" id="hero-video-modal">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<video class="video-sec" controls loop muted autoplay>
+							<source src="~/images/Homepage1/video.mp4" type="video/mp4">
+						</video>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Hero Video Modal End -->
+		<!--Scroll Top to Bottom Start -->
+		<div class="scroll-top" data-scroll="up" style="">
+		</div>
+		<!--Scroll Top to Bottom  End -->
+    </div>
+
+	<script src="~/js/jquery-min-3.6.0.js"></script>
+	<script src="~/js/slick.min.js"></script>
+	<script src="~/js/bootstrap.bundle.min.js"></script>
+	<script src="~/js/aos.js"></script>
+	<script src="~/js/jquery-ui.min.js"></script>
+	<script src="~/js/datepicker.js"></script>
+	<script src="~/js/wow.min.js"></script>
+	<script src="~/js/photoswipe.min.js"></script>
+	<script src="~/js/photoswipe-ui-default.min.js"></script>
+	<script src="~/js/gallery-popup.js"></script>
+	<script src="~/js/TweenMax.min.js"></script>
+	<script src="~/js/ScrollMagic.js"></script>
+	<script src="~/js/animation.gsap.min.js"></script>
+	<script src="~/js/scolling.js"></script>
+	<script src="~/js/custom.js"></script>
+</body>
+</html>

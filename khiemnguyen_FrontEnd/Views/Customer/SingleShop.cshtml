@@ -1,0 +1,179 @@
+﻿
+@model Menu
+	<div class="site_content">
+
+		<!-- Add To Cart Section Start -->
+		<section id="single-shop-deatils-sec">
+			<div class="container ptb-100 line">
+				<span class="line-3"></span>
+				<span class="line-4"></span>
+				<span class="line-5"> </span>
+				<div class="single-shop-deatils-sec-full">
+					<div class="single-shop-left">
+						<div class="slider_section">
+							<div class="slider_full_section">
+								<div class="slider slider-for slider-top">
+									<div class="slider_details_sec">
+										<img class="slider_img img-fluid " src="~/images/single-shop/single-dish-1.png" alt="slider_img">
+									</div>
+									
+								</div>
+							
+							</div>
+						</div>
+					</div>
+					<div class="single-shop-right">
+						<div class="single-shop-content1">
+							<h2 class="single-shop-txt1">@Model.Name</h2>
+						</div>
+						<div class="single-shop-deatils">
+							<div class="single-shop-content2">
+								<span class="single-shop-txt2">Chef</span>
+								<span class="single-shop-txt3">@ViewBag.Chef</span>
+							</div>
+							<div class="single-shop-content3">
+								<div>
+									@for(int x=1 ;x<=ViewBag.Rate;x++){
+									<span><img src="~/images/single-shop/star.svg" alt="star-img"></span>
+									}
+								</div>
+								<div>
+									<p class="single-shop-txt5">(10 Reviews)</p>
+								</div>
+							</div>
+						</div>
+						<div class="single-shop-content4">
+							<h3 class="single-shop-txt6">@Model.Price</h3>
+							<p class="single-shop-txt7">@Model.Description</p>
+						</div>
+						<div class="va_quality">
+							<form asp-action="addtocart">
+								<input asp-for="@Model.id" hidden />
+
+								<input asp-for="@Model.Price" hidden />
+								<span>Quantity:</span>
+
+					
+							
+								<span id="minus1" class="sub">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<mask id="mask0_502_14353" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+											<path d="M0 0H24V24H0V0Z" fill="white" />
+										</mask>
+										<g mask="url(#mask0_502_14353)">
+											<path d="M5 11H19V13H5V11Z" fill="#99A9AD" />
+										</g>
+									</svg>
+								</span>
+
+								<input id="qty1" type="number" id="quantity" name="quantity" value="1" class="qty">
+								
+								<span id="add1" class="add">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<mask id="mask0_502_14350" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+											<path d="M0 0H24V24H0V0Z" fill="white" />
+										</mask>
+										<g mask="url(#mask0_502_14350)">
+											<path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z" fill="#99A9AD" />
+										</g>
+									</svg>
+								</span>
+								<button type="submit" href="cart-view.html" class="add-cart-bnt">Add To Cart</button>
+										</form>
+						
+
+						</div>
+						<div class="single-shop-content5">
+							<ul>
+								<li>
+									<a href="javascript:void(0);" class="single-shop-txt8 ">Description</a>
+									<span>
+										
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<mask style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+												<rect width="24" height="24" fill="white" />
+											</mask>
+											<g mask="url(#mask0_586_6074)">
+												<path d="M19 8.5L12 15.5L5 8.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+											</g>
+										</svg>
+									</span>
+								</li>
+								<li>
+									<a href="javascript:void(0);" class="single-shop-txt8 ">Reviews</a>
+									<span>
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<mask style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+												<rect width="24" height="24" fill="white" />
+											</mask>
+											<g mask="url(#mask0_586_6074)">
+												<path d="M19 8.5L12 15.5L5 8.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+											</g>
+										</svg>
+									</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Add To Cart Section End -->
+		<!-- Deatils  Section Start -->
+		<section id="singleshop-deatils-section">
+			<div class="container line singleshop-deatils-section-mt">
+				<span class="line-3"></span>
+				<span class="line-4"></span>
+				<span class="line-5"> </span>
+				<div class="singleshop-deatils-section-full">
+					<div class="single-shop-top">
+						<h2 class="single-shop-heading wow fadeInUp" data-wow-duration="1s">You May Also Like</h2>
+					</div>
+					<div class="single-shop-bottom">
+						<div class="single-shop-bottom-full">
+							<div class="single-shop-bottom-content wow fadeInUp" data-wow-duration="1.4s">
+								<div class="single-shop-bottom-img">
+									<img src="~/images/single-shop/dish-1.png" alt="food-img" class="img-fluid">
+									<div class="case-one_overlay"></div>
+								</div>
+								<div class="single-shop-content-bottom">
+									<div class="single-shop-content-bottom-full">
+										<span class="single-shop-name">Orange Juice</span>
+										<span class="single-shop-price">$20</span>
+									</div>
+									<p class="single-shop-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do ting eusm tempor incididunt ut labore et dolore magna aliqua.</p>
+								</div>
+							</div>
+							<div class="single-shop-bottom-content wow fadeInUp" data-wow-duration="1.8s">
+								<div class="single-shop-bottom-img">
+									<img src="~/images/single-shop/dish-2.png" alt="food-img" class="img-fluid">
+									<div class="case-one_overlay"></div>
+								</div>
+								<div class="single-shop-content-bottom">
+									<div class="single-shop-content-bottom-full">
+										<span class="single-shop-name">Le Pigeon Burger</span>
+										<span class="single-shop-price">$20</span>
+									</div>
+									<p class="single-shop-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do ting eusm tempor incididunt ut labore et dolore magna aliqua.</p>
+								</div>
+							</div>
+							<div class="single-shop-bottom-content wow fadeInUp" data-wow-duration="2s">
+								<div class="single-shop-bottom-img">
+									<img src="~/images/single-shop/dish-3.png" alt="food-img" class="img-fluid">
+									<div class="case-one_overlay"></div>
+								</div>
+								<div class="single-shop-content-bottom">
+									<div class="single-shop-content-bottom-full">
+										<span class="single-shop-name">Broccoli Rabe</span>
+										<span class="single-shop-price">$20</span>
+									</div>
+									<p class="single-shop-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do ting eusm tempor incididunt ut labore et dolore magna aliqua.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Deatils  Section Start -->
+    </div>
